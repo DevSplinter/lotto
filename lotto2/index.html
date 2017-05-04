@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Losowanie Dużego Lotka</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <section class="visible">
+            <div class="content">
+                <h1>Losowanie Dużego Lotka</h1>
+                <p>Witaj w grze Losowanie Dużego Lotka. Na start otrzymujesz od nas 100zł. Już dziś masz szansę zdobyć nagrodę główną. Graj i wygrywaj miliony!</p>
+            </div>
+            <button class="btn btnStart">Graj i wygrywaj!</button>
+        </section>
+        
+        <section>
+            <div class="content">
+                <h2>Wybierz 6 spośród 49 liczb:</h2>
+                <button class="btnNum" value="1">1</button>
+                <button class="btnNum" value="2">2</button>
+                <button class="btnNum" value="3">3</button>
+                <button class="btnNum" value="4">4</button>
+                <button class="btnNum" value="5">5</button>
+                <button class="btnNum" value="6">6</button>
+                <button class="btnNum" value="7">7</button>
+                <button class="btnNum" value="8">8</button>
+                <button class="btnNum" value="9">9</button>
+                <button class="btnNum" value="10">10</button>
+                <button class="btnNum" value="11">11</button>
+                <button class="btnNum" value="12">12</button>
+                <button class="btnNum" value="13">13</button>
+                <button class="btnNum" value="14">14</button>
+                <button class="btnNum" value="15">15</button>
+                <button class="btnNum" value="16">16</button>
+                <button class="btnNum" value="17">17</button>
+                <button class="btnNum" value="18">18</button>
+                <button class="btnNum" value="19">19</button>
+                <button class="btnNum" value="20">20</button>
+                <button class="btnNum" value="21">21</button>
+                <button class="btnNum" value="22">22</button>
+                <button class="btnNum" value="23">23</button>
+                <button class="btnNum" value="24">24</button>
+                <button class="btnNum" value="25">25</button>
+                <button class="btnNum" value="26">26</button>
+                <button class="btnNum" value="27">27</button>
+                <button class="btnNum" value="28">28</button>
+                <button class="btnNum" value="29">29</button>
+                <button class="btnNum" value="30">30</button>
+                <button class="btnNum" value="31">31</button>
+                <button class="btnNum" value="32">32</button>
+                <button class="btnNum" value="33">33</button>
+                <button class="btnNum" value="34">34</button>
+                <button class="btnNum" value="35">35</button>
+                <button class="btnNum" value="36">36</button>
+                <button class="btnNum" value="37">37</button>
+                <button class="btnNum" value="38">38</button>
+                <button class="btnNum" value="39">39</button>
+                <button class="btnNum" value="40">40</button>
+                <button class="btnNum" value="41">41</button>
+                <button class="btnNum" value="42">42</button>
+                <button class="btnNum" value="43">43</button>
+                <button class="btnNum" value="44">44</button>
+                <button class="btnNum" value="45">45</button>
+                <button class="btnNum" value="46">46</button>
+                <button class="btnNum" value="47">47</button>
+                <button class="btnNum" value="48">48</button>
+                <button class="btnNum" value="49">49</button>
+            </div>
+            <output class="showSeletedNum"></output>
+            <button class="btn btnNext" disabled>Przejdź dalej &gt;</button>
+        </section>
+        <section>
+            <h2>Uruchom maszynę losującą!</h2>
+            <output class="showCredit">Twój stan konta: 100 zł</output>
+            <button class="btn btnRand">Losuj!</button>
+            <div class="randNumContainer">
+                <h3>Wylosowane liczby to:</h3>
+                <output class="showRandomNum">Zaczynajmy!</output>
+            </div>
+            <div class="selectedNumContainer">
+                <h4>Skreślone liczby:</h4>
+                <output class="showSelectedNum"></output>
+            </div>
+            <div class="messageContainer">
+                <output class="message">Szukaj szczęścia w numerach</output>
+            </div>
+        </section>
+        <div class="resultsContainer">
+            <div class="results">
+                <h2>Twoje trafienia w tej grze:</h2>
+                <ul>
+                    <li class="guess1"></li>
+                    <li class="guess2"></li>
+                    <li class="guess3"></li>
+                    <li class="guess4"></li>
+                    <li class="guess5"></li>
+                    <li class="guess6"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
