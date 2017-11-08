@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <title>Losowanie Dużego Lotka</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
 
     <div class="container">
@@ -14,11 +13,15 @@
             <div class="content">
                 <h1>Losowanie Dużego Lotka</h1>
                 <p>Witaj w grze Losowanie Dużego Lotka. Na start otrzymujesz od nas 100zł. Już dziś masz szansę zdobyć nagrodę główną. Graj i wygrywaj miliony!</p>
+                <label class="labelNick" for="nick">Podaj swoje imię: </label>
+            <input class="inputNick" type="text" name="nick">
+                <p class="errorMessage">Nie używaj symboli</p>
             </div>
+            
             <button class="btn btnStart">Graj i wygrywaj!</button>
         </section>
-
-        <section>
+        
+        <section class="board">
             <div class="content">
                 <h2>Wybierz 6 spośród 49 liczb:</h2>
                 <button class="btnNum" value="1">1</button>
@@ -76,7 +79,8 @@
         </section>
         <section>
             <h2>Uruchom maszynę losującą!</h2>
-            <output class="showCredit">Twój stan konta: 100 zł</output>
+            <output class="showCredit">Stan konta: 100 zł</output>
+            <output class="showIncome">Twoje wygrane: 0 zł</output>
             <button class="btn btnRand">Losuj!</button>
             <div class="randNumContainer">
                 <h3>Wylosowane liczby to:</h3>
@@ -101,11 +105,11 @@
                     <li class="guess5"></li>
                     <li class="guess6"></li>
                 </ul>
+                <button class="btn btnResults">Zapisz wynik!</button>
             </div>
         </div>
     </div>
 
-    <script src="js/scripts.js"></script>
+<script src="js/scripts.js"></script>
 </body>
-
 </html>
